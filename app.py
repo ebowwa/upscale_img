@@ -82,7 +82,7 @@ def upscale(image_path, model):
 if __name__ == "__main__":
     try:
         image_path = "7ef47509-61fb-4db6-9781-de2e3d646185_resized.png"
-        model_name = "Image-Upscaling-Playground/models/minecraft_modelx4.ort"
+        model_name = "/models/minecraft_modelx4.ort"
         output_image = upscale(image_path, model_name)
         cv2.imwrite("upscaled_image.png", output_image)
         print("Upscaling completed. Result saved as 'upscaled_image.png'.")
